@@ -2,7 +2,7 @@ import js from "@eslint/js";
 import tseslint from "typescript-eslint";
 import eslintConfigPrettier from "eslint-config-prettier";
 
-export default tseslint.config(
+export default tseslint.defineConfig(
     // 1. Базові рекомендовані правила JavaScript та TypeScript
     js.configs.recommended,
     ...tseslint.configs.recommended,
